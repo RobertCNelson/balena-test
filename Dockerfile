@@ -27,7 +27,8 @@ RUN install_packages \
   python3-boto3 \
   python3-ntplib \
   cpufrequtils \
-  wpan-tools
+  wpan-tools \
+  bb-code-server
 
 CMD ["bash", "start.sh"]
 

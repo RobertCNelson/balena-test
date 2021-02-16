@@ -37,5 +37,7 @@ function ap {
 
 ap &
 
+/opt/code-server/app/bin/code-server --auth none --bind-addr 0.0.0.0:3000 &
+
 sleep infinity
 
