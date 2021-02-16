@@ -1,4 +1,6 @@
 FROM balenalib/armv7hf-debian-node:12-buster-build
+RUN echo "deb [arch=armhf] http://repos.rcn-ee.net/debian/ buster main" >> /etc/apt/sources.list \
+	&& apt-key adv --batch --keyserver keyserver.ubuntu.com --recv-key D284E608A4C46402
 ENV UDEV=1
 RUN install_packages apt-utils
 
