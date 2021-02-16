@@ -1,4 +1,4 @@
-FROM balenalib/armv7hf-debian-buster-build
+FROM balenalib/armv7hf-debian-node:12-buster-build
 ENV UDEV=1
 RUN install_packages apt-utils
 
